@@ -1,8 +1,7 @@
-
 using System.Collections;
 using UnityEngine;
 
-public class JrsVehicleController : MonoBehaviour
+public class CarMovement : MonoBehaviour
 {
     public float motorForce = 50f;
     public float maxSteerAngle = 30f;
@@ -19,24 +18,24 @@ public class JrsVehicleController : MonoBehaviour
     public float shiftThreshold = 5000f;
 
 
-    private int currentGear = 1;
-    private Rigidbody rb;
-    private float stopSpeedThreshold = 1f;
+    private int _currentGear = 1;
+    private Rigidbody _rb;
+    private float _stopSpeedThreshold = 1f;
     private Quaternion prevRotation;
-    private JrsInputController mobileInputController;
-    private bool hasStartedMoving = false;
+    private JrsInputController _mobileInputController;
+    private bool _hasStartedMoving = false;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
         prevRotation = frontLeftWheelTransform.rotation;
-        mobileInputController = FindFirstObjectByType<JrsInputController>();
+        _mobileInputController = FindFirstObjectByType<JrsInputController>();
         StartCoroutine(DelayedEngineSound());
     }
 
     IEnumerator DelayedEngineSound()
     {
-        while (!hasStartedMoving)
+        while (!_hasStartedMoving)
         {
             yield return null;
         }
@@ -48,11 +47,11 @@ public class JrsVehicleController : MonoBehaviour
     {
         if (centerOfMassObject)
         {
-            rb.centerOfMass = transform.InverseTransformPoint(centerOfMassObject.transform.position);
+            _rb.centerOfMass = transform.InverseTransformPoint(centerOfMassObject.transform.position);
         }
 
-        float v = mobileInputController != null ? mobileInputController.GetVerticalInput() : Input.GetAxis("Vertical") * motorForce;
-        float h = mobileInputController != null ? mobileInputController.GetHorizontalInput() : Input.GetAxis("Horizontal") * maxSteerAngle;
+        float v = _mobileInputController != null ? _mobileInputController.GetVerticalInput() : Input.GetAxis("Vertical") * motorForce;
+        float h = _mobileInputController != null ? _mobileInputController.GetHorizontalInput() : Input.GetAxis("Horizontal") * maxSteerAngle;
 
         // Apply motor torque to the wheels
         frontLeftWheel.motorTorque = v;
@@ -65,7 +64,7 @@ public class JrsVehicleController : MonoBehaviour
         // Update wheel poses
         UpdateWheelPoses();
 
-        if (Input.GetKey(KeyCode.Space) || mobileInputController.brakeButton.IsButtonPressed())
+        if (Input.GetKey(KeyCode.Space) || _mobileInputController.brakeButton.IsButtonPressed())
         {
             foreach (WheelCollider wheelCollider in wheelCollidersBrake)
             {
@@ -83,28 +82,28 @@ public class JrsVehicleController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float v = mobileInputController != null ? mobileInputController.GetVerticalInput() * motorForce : 0f;
-        float h = mobileInputController != null ? mobileInputController.GetHorizontalInput() * maxSteerAngle : 0f;
+        float v = _mobileInputController != null ? _mobileInputController.GetVerticalInput() * motorForce : 0f;
+        float h = _mobileInputController != null ? _mobileInputController.GetHorizontalInput() * maxSteerAngle : 0f;
 
         // Calculate the current wheel speed in km/h
         float currentSpeedKmph = frontLeftWheel.radius * Mathf.PI * frontLeftWheel.rpm * 60f / 1000f;
         Debug.Log("Current Speed: " + currentSpeedKmph + " Kmph");
 
         // Calculate the current engine RPM based on the wheel speed and gear ratio
-        float currentRPM = frontLeftWheel.rpm * gearRatios[Mathf.Clamp(currentGear - 1, 0, gearRatios.Length - 1)];
+        float currentRPM = frontLeftWheel.rpm * gearRatios[Mathf.Clamp(_currentGear - 1, 0, gearRatios.Length - 1)];
 
         // Check if it's time to shift to a higher gear
-        if (currentRPM > shiftThreshold && currentGear < gearRatios.Length)
+        if (currentRPM > shiftThreshold && _currentGear < gearRatios.Length)
         {
-            currentGear++; // Shift to the next gear
+            _currentGear++; // Shift to the next gear
         }
-        else if (currentSpeedKmph < stopSpeedThreshold && currentGear > 1)
+        else if (currentSpeedKmph < _stopSpeedThreshold && _currentGear > 1)
         {
-            currentGear--; // Shift to the previous gear when slowing down
+            _currentGear--; // Shift to the previous gear when slowing down
         }
 
         // Adjust the motor torque based on the current gear ratio
-        float adjustedTorque = v * gearRatios[Mathf.Clamp(currentGear - 1, 0, gearRatios.Length - 1)];
+        float adjustedTorque = v * gearRatios[Mathf.Clamp(_currentGear - 1, 0, gearRatios.Length - 1)];
 
         // Apply motor torque to the wheels
         if (enable4x4)
@@ -133,9 +132,9 @@ public class JrsVehicleController : MonoBehaviour
         prevRotation = currentRotation;
 
 
-        if (!hasStartedMoving && currentSpeedKmph > 0.1f)
+        if (!_hasStartedMoving && currentSpeedKmph > 0.1f)
         {
-            hasStartedMoving = true;
+            _hasStartedMoving = true;
         }
     }
 
