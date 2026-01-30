@@ -17,19 +17,24 @@ public class CarMovement : MonoBehaviour
     public float[] gearRatios;
     public float shiftThreshold = 5000f;
 
+    public PlayerInput playerInput;
+    public CarPartsController partsController;
+
 
     private int _currentGear = 1;
     private Rigidbody _rb;
     private float _stopSpeedThreshold = 1f;
     private Quaternion prevRotation;
-    private JrsInputController _mobileInputController;
     private bool _hasStartedMoving = false;
 
     void Start()
     {
+        playerInput.RegisterOnHornsKeyDown(partsController.PlayHorns);
+        playerInput.RegisterOnWipersKeyDown(partsController.PlayWipers);
+        playerInput.RegisterOnLightKeyDown(partsController.PlayLights);
+
         _rb = GetComponent<Rigidbody>();
         prevRotation = frontLeftWheelTransform.rotation;
-        _mobileInputController = FindFirstObjectByType<JrsInputController>();
         StartCoroutine(DelayedEngineSound());
     }
 
@@ -50,21 +55,18 @@ public class CarMovement : MonoBehaviour
             _rb.centerOfMass = transform.InverseTransformPoint(centerOfMassObject.transform.position);
         }
 
-        float v = _mobileInputController != null ? _mobileInputController.GetVerticalInput() : Input.GetAxis("Vertical") * motorForce;
-        float h = _mobileInputController != null ? _mobileInputController.GetHorizontalInput() : Input.GetAxis("Horizontal") * maxSteerAngle;
+        float v = playerInput.VerticalInput * motorForce;
+        float h = playerInput.HorizontalInput * maxSteerAngle;
 
-        // Apply motor torque to the wheels
         frontLeftWheel.motorTorque = v;
         frontRightWheel.motorTorque = v;
 
-        // Apply steering angle to the front wheels
         frontLeftWheel.steerAngle = h;
         frontRightWheel.steerAngle = h;
 
-        // Update wheel poses
         UpdateWheelPoses();
 
-        if (Input.GetKey(KeyCode.Space) || _mobileInputController.brakeButton.IsButtonPressed())
+        if (playerInput.IsBreaking)
         {
             foreach (WheelCollider wheelCollider in wheelCollidersBrake)
             {
@@ -82,30 +84,23 @@ public class CarMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float v = _mobileInputController != null ? _mobileInputController.GetVerticalInput() * motorForce : 0f;
-        float h = _mobileInputController != null ? _mobileInputController.GetHorizontalInput() * maxSteerAngle : 0f;
+        float v = playerInput.VerticalInput * motorForce;
+        float h = playerInput.HorizontalInput * maxSteerAngle;
 
-        // Calculate the current wheel speed in km/h
         float currentSpeedKmph = frontLeftWheel.radius * Mathf.PI * frontLeftWheel.rpm * 60f / 1000f;
-        Debug.Log("Current Speed: " + currentSpeedKmph + " Kmph");
-
-        // Calculate the current engine RPM based on the wheel speed and gear ratio
         float currentRPM = frontLeftWheel.rpm * gearRatios[Mathf.Clamp(_currentGear - 1, 0, gearRatios.Length - 1)];
 
-        // Check if it's time to shift to a higher gear
         if (currentRPM > shiftThreshold && _currentGear < gearRatios.Length)
         {
-            _currentGear++; // Shift to the next gear
+            _currentGear++;
         }
         else if (currentSpeedKmph < _stopSpeedThreshold && _currentGear > 1)
         {
-            _currentGear--; // Shift to the previous gear when slowing down
+            _currentGear--;
         }
 
-        // Adjust the motor torque based on the current gear ratio
         float adjustedTorque = v * gearRatios[Mathf.Clamp(_currentGear - 1, 0, gearRatios.Length - 1)];
 
-        // Apply motor torque to the wheels
         if (enable4x4)
         {
             frontLeftWheel.motorTorque = adjustedTorque;
