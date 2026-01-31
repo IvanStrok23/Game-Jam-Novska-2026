@@ -56,6 +56,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DirtWiperMask:
+        m_Texture: {fileID: 2800000, guid: d8ac8a38999142343a754bf74b580e5c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissiveColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -117,7 +121,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WiperMask:
-        m_Texture: {fileID: 2800000, guid: a39e3783fbc47f64c92f0dbd338d9d95, type: 3}
+        m_Texture: {fileID: 2800000, guid: d8ac8a38999142343a754bf74b580e5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -139,7 +143,8 @@ Material:
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
-    - _AlphaClip: 0.111
+    - _Alpha: 0.665
+    - _AlphaClip: 0.04
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 1
     - _AlphaCutoffPostpass: 0.5
@@ -172,8 +177,9 @@ Material:
     - _DrainSpeed: 0.01
     - _DstBlend: 0
     - _DstBlend2: 0
-    - _Edge: 0.028
-    - _Edge2: 0.778
+    - _Edge: 0
+    - _Edge2: 0.846
+    - _EdgeSharpness: 0.178
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
     - _EmissiveIntensity: 1
@@ -202,7 +208,7 @@ Material:
     - _Metallic: 0
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
-    - _NoiseScale: 30.9
+    - _NoiseScale: 13.1
     - _NormalMapSpace: 0
     - _NormalScale: 1
     - _ObjectSpaceUVMapping: 0
@@ -221,7 +227,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _SmearStrength: 53.4
-    - _Smoothness: 0.5
+    - _Smoothness: 1
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
@@ -247,7 +253,7 @@ Material:
     - _TransmissionEnable: 1
     - _TransmissionMask: 1
     - _TransparentBackfaceEnable: 0
-    - _TransparentCullMode: 0
+    - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
     - _TransparentSortPriority: 0
@@ -258,19 +264,23 @@ Material:
     - _UVEmissive: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
-    - _WiperMaskStrength: 0
+    - _WiperMaskDirtyness: 0
+    - _WiperMaskStrength: 1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.3584906, g: 0.24344267, b: 0.14373444, a: 1}
+    - _Color: {r: 0.46226418, g: 0.21401118, b: 0, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
+    - _DirtColor: {r: 0.17861052, g: 1.6245047, b: 0, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
+    - _Glass: {r: 0.23851895, g: 0.680961, b: 0.75471693, a: 1}
+    - _GlassColor: {r: 0, g: 1, b: 0.38262558, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _MaskOffset: {r: 0.08, g: -0.04, b: 0, a: 0}
@@ -283,6 +293,8 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+    - _WiperMaskOffset: {r: 0.02, g: 0, b: 0, a: 0}
+    - _WiperMaskTiling: {r: -1.97, g: -3.55, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8804675761583313250

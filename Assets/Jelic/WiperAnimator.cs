@@ -12,19 +12,17 @@ public class WiperAnimator : MonoBehaviour
 
     private Coroutine animationCorutine;
 
-    private void Update()
+
+    public void AnimateWiper()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (animationCorutine != null)
         {
-            if (animationCorutine != null)
-            {
-                StopCoroutine(animationCorutine);
-            }
-            animationCorutine = StartCoroutine(AnimateWiper());
+            StopCoroutine(animationCorutine);
         }
+        animationCorutine = StartCoroutine(Animate());
     }
 
-    private IEnumerator AnimateWiper()
+    private IEnumerator Animate()
     {
         for (int j = 0; j < wipeAmount; j++)
         {
