@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class ObstacleBase : MonoBehaviour
 {
     public NavMeshAgent agent;
+    public Animator animator;
     public Transform[] walkPoints;
     public DirtType DirtType;
     public float Damage = 0;
@@ -11,6 +13,7 @@ public class ObstacleBase : MonoBehaviour
 
     private int currentPointIndex = 0;
     public bool IsHit = false;
+    private Action _onHit;
 
     void Start()
     {
@@ -30,6 +33,10 @@ public class ObstacleBase : MonoBehaviour
         }
     }
 
+    public void RegisterOnHit(Action onHit)
+    {
+        _onHit = onHit;
+    }
     void GoToNextPoint()
     {
         if (walkPoints.Length == 0) return;
@@ -51,6 +58,11 @@ public class ObstacleBase : MonoBehaviour
             rb.isKinematic = false;
             rb.AddForce(force, ForceMode.Impulse);
         }
+        if (animator)
+        {
+            animator.enabled = false;
+        }
+        _onHit?.Invoke();
         Invoke(nameof(DestroyObject), LifetimeAfterHit);
     }
 
