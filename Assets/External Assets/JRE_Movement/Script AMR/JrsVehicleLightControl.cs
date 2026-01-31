@@ -21,7 +21,6 @@
 // SOFTWARE.
 
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class JrsVehicleLightControl : MonoBehaviour
@@ -48,7 +47,7 @@ public class JrsVehicleLightControl : MonoBehaviour
     {
         if (mobileInputController == null)
         {
-            mobileInputController = FindObjectOfType<JrsInputController>();
+            mobileInputController = FindFirstObjectByType<JrsInputController>();
         }
 
 
@@ -91,9 +90,9 @@ public class JrsVehicleLightControl : MonoBehaviour
         // {
         //     ToggleReverseLights(false);
         // }
-        
-        
-        
+
+
+
         if (Input.GetKey(KeyCode.Space))
         {
             ToggleBrakeLights(true);
@@ -106,7 +105,7 @@ public class JrsVehicleLightControl : MonoBehaviour
 
 
         //Uncomment the below function so that the the brake light for mobile will work
-        
+
         // if (mobileInputController.brakeButton.IsButtonPressed())
         // {
         //     ToggleBrakeLights(true);
@@ -116,7 +115,7 @@ public class JrsVehicleLightControl : MonoBehaviour
         // {
         //     ToggleBrakeLights(false);
         // }
-        
+
     }
 
     void ToggleLights()
@@ -185,7 +184,7 @@ public class JrsVehicleLightControl : MonoBehaviour
             isFlickering = false;
             StopCoroutine(FlickerCoroutine());
             // Reset the object to its original state
-          
+
         }
     }
 

@@ -20,8 +20,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class JrsPoliceSiren : MonoBehaviour
@@ -37,9 +35,9 @@ public class JrsPoliceSiren : MonoBehaviour
     {
         if (mobileInputController == null)
         {
-            mobileInputController = FindObjectOfType<JrsInputController>();
+            mobileInputController = FindFirstObjectByType<JrsInputController>();
         }
-        if (Input.GetKeyDown(KeyCode.P)  || mobileInputController.sirenButton.IsButtonClicked())
+        if (Input.GetKeyDown(KeyCode.P) || mobileInputController.sirenButton.IsButtonClicked())
         {
             isSirenOn = !isSirenOn;
             ToggleSirenLights();

@@ -17,7 +17,6 @@ public class CarMovement : MonoBehaviour
     public float[] gearRatios;
     public float shiftThreshold = 5000f;
 
-    public PlayerInput playerInput;
     public CarPartsController partsController;
 
 
@@ -26,12 +25,14 @@ public class CarMovement : MonoBehaviour
     private float _stopSpeedThreshold = 1f;
     private Quaternion prevRotation;
     private bool _hasStartedMoving = false;
+    private PlayerInput _playerInput;
 
+    internal void Init(PlayerInput playerInput) => _playerInput = playerInput;
     void Start()
     {
-        playerInput.RegisterOnHornsKeyDown(partsController.PlayHorns);
-        playerInput.RegisterOnWipersKeyDown(partsController.PlayWipers);
-        playerInput.RegisterOnLightKeyDown(partsController.PlayLights);
+        _playerInput.RegisterOnHornsKeyDown((keyCode) => partsController.PlayHorns());
+        _playerInput.RegisterOnWipersKeyDown((keyCode) => partsController.PlayWipers());
+        _playerInput.RegisterOnLightKeyDown((keyCode) => partsController.PlayLights());
 
         _rb = GetComponent<Rigidbody>();
         prevRotation = frontLeftWheelTransform.rotation;
@@ -55,8 +56,8 @@ public class CarMovement : MonoBehaviour
             _rb.centerOfMass = transform.InverseTransformPoint(centerOfMassObject.transform.position);
         }
 
-        float v = playerInput.VerticalInput * motorForce;
-        float h = playerInput.HorizontalInput * maxSteerAngle;
+        float v = _playerInput.VerticalInput;// * motorForce;
+        float h = _playerInput.HorizontalInput;// * maxSteerAngle;
 
         frontLeftWheel.motorTorque = v;
         frontRightWheel.motorTorque = v;
@@ -66,7 +67,7 @@ public class CarMovement : MonoBehaviour
 
         UpdateWheelPoses();
 
-        if (playerInput.IsBreaking)
+        if (_playerInput.IsBreaking)
         {
             foreach (WheelCollider wheelCollider in wheelCollidersBrake)
             {
@@ -84,8 +85,8 @@ public class CarMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float v = playerInput.VerticalInput * motorForce;
-        float h = playerInput.HorizontalInput * maxSteerAngle;
+        float v = _playerInput.VerticalInput * motorForce;
+        float h = _playerInput.HorizontalInput * maxSteerAngle;
 
         float currentSpeedKmph = frontLeftWheel.radius * Mathf.PI * frontLeftWheel.rpm * 60f / 1000f;
         float currentRPM = frontLeftWheel.rpm * gearRatios[Mathf.Clamp(_currentGear - 1, 0, gearRatios.Length - 1)];
@@ -156,4 +157,6 @@ public class CarMovement : MonoBehaviour
         transform.position = pos;
         transform.rotation = quat;
     }
+
+
 }
