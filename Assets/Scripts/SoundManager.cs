@@ -9,9 +9,10 @@ public class SoundManager : MonoSingleton<SoundManager>
     [SerializeField] private AudioClip _birdSound;
     [SerializeField] private AudioClip _karnevalBackground;
     [SerializeField] private AudioClip _nocVjesticaBackground;
+    [SerializeField] private AudioClip _firstBuildingHitSound;
+    [SerializeField] private AudioClip _firstPeopleHitSound;
 
 
-    public void PlayBirdSound() => _oneShotSource.PlayOneShot(_birdSound);
     public void PlayKarnevalBackground()
     {
         _backgroundSource.clip = _karnevalBackground;
@@ -24,5 +25,8 @@ public class SoundManager : MonoSingleton<SoundManager>
         _backgroundSource.Play();
     }
 
+    public void PlayBirdSound() => _oneShotSource.PlayOneShot(_birdSound);
     internal void PlayOnce(AudioClip sound) => _oneShotSource.PlayOneShot(sound);
+    internal void PlayOnFirstBuildingHit() => _oneShotSource.PlayOneShot(_firstBuildingHitSound);
+    internal void PlayOnFirstPeopleHit() => _oneShotSource.PlayOneShot(_firstPeopleHitSound);
 }

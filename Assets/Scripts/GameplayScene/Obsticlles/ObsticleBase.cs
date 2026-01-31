@@ -7,6 +7,7 @@ public class ObstacleBase : MonoBehaviour
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private Transform[] _walkPoints;
     [SerializeField] private DirtType _dirtType;
+    [SerializeField] private ObsticleType _type;
     [SerializeField] private float _damage = 5;
     [SerializeField] private float _lifetimeAfterHit = 3;
     [SerializeField] private AudioClip _hitSound;
@@ -21,6 +22,7 @@ public class ObstacleBase : MonoBehaviour
 
     public float Damage => _damage;
     public DirtType DirtType => _dirtType;
+    public ObsticleType Type => _type;
     public float LifetimeAfterHit => _lifetimeAfterHit;
 
     void Start()
@@ -122,13 +124,8 @@ public class ObstacleBase : MonoBehaviour
 }
 
 
-//public enum ObsticleType
-//{
-//    BuissnesGuy,
-//    FarmerLik,
-//    Nun,
-//    Obsticle,
-//    RadniciStaklo,
-//    Ronaldo,
-//    VoceLik
-//}
+public enum ObsticleType
+{
+    Buildings,
+    People
+}

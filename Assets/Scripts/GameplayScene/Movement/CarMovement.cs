@@ -192,8 +192,9 @@ public class CarMovement : MonoBehaviour
             {
                 float damageReceived = obsticle.Damage;
                 DirtType dirtType = obsticle.DirtType;
+                ObsticleType type = obsticle.Type;
                 obsticle.Hit(collision.relativeVelocity);
-                AbsorbDamage(damageReceived);
+                AbsorbDamage(type, damageReceived);
                 partsController.OnGetDirty(dirtType);
 
                 //  if (obsticle)
@@ -206,9 +207,20 @@ public class CarMovement : MonoBehaviour
     private bool _isFirstBuildingHit = false;
     private bool _isFirstPeopleHit = false;
 
-    private void AbsorbDamage(float damageReceived)
+    private void AbsorbDamage(ObsticleType type, float damageReceived)
     {
         _onDamageReceived(damageReceived);
+        if (type == ObsticleType.Buildings && !_isFirstBuildingHit)
+        {
+            _isFirstBuildingHit = true;
+            SoundManager.MonoInstance.PlayOnFirstBuildingHit();
+        }
+        else if (!_isFirstPeopleHit)
+        {
+
+            _isFirstPeopleHit = true;
+            SoundManager.MonoInstance.PlayOnFirstPeopleHit();
+        }
     }
 
 
