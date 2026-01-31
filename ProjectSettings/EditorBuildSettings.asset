@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Ivan/StartScene.unity
     guid: efdb0b97891398a4a832e35cc1687f75
   - enabled: 1
+    path: Assets/Scenes/Ivan/StripScene.unity
+    guid: bcb1423c2b3ad1244a25ec61048d0100
+  - enabled: 1
     path: Assets/Scenes/Ivan/Ivan_test.unity
     guid: cd08c32647926ed46a1fd75d2909c9d8
   m_configObjects:
