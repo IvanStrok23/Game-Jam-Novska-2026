@@ -196,9 +196,15 @@ public class CarMovement : MonoBehaviour
                 AbsorbDamage(damageReceived);
                 partsController.OnGetDirty(dirtType);
 
+                if (obsticle)
+
             }
         }
     }
+
+
+    private bool _isFirstBuildingHit = false;
+    private bool _isFirstPeopleHit = false;
 
     private void AbsorbDamage(float damageReceived)
     {

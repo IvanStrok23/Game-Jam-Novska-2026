@@ -23,4 +23,6 @@ public class SoundManager : MonoSingleton<SoundManager>
         _backgroundSource.clip = _nocVjesticaBackground;
         _backgroundSource.Play();
     }
+
+    internal void PlayOnce(AudioClip sound) => _oneShotSource.PlayOneShot(sound);
 }
