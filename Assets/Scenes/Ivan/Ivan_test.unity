@@ -184,8 +184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &20345959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4395109317057998446, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -251,8 +249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &46245497 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3666060355178368824, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -318,8 +314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &63824859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5102408955313272587, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -385,8 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1001 &74144721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -605,8 +597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &200988634 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2479485876426761970, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -672,8 +662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &217578043
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,8 +772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &260012945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 786058618483001498, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -851,8 +837,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &309600312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5424213705957445524, guid: 001b3bb84f6adf9429b9fa4f5537b1cc, type: 3}
@@ -1052,8 +1036,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &394293114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,8 +1269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1001 &422000046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2031,8 +2011,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &542608522 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7889809971680352876, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -2098,8 +2076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &559323791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6596987358353697588, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -2165,8 +2141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &567798078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,8 +2447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &646681704 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3208270202911646339, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -2540,8 +2512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &648627539 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9088872756827976528, guid: 001b3bb84f6adf9429b9fa4f5537b1cc, type: 3}
@@ -2741,8 +2711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &699319149 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6572446710025040500, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -2808,8 +2776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,8 +3305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &781126937 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4471622731214243435, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -3406,8 +3370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &835343801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1033859536177898853, guid: 001b3bb84f6adf9429b9fa4f5537b1cc, type: 3}
@@ -3701,8 +3663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &866105816 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4176276488853827349, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -3768,8 +3728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &882621599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3947,8 +3905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &913526250 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 442119098050900029, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -4014,8 +3970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &918549819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -4071,96 +4025,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!1 &937384385
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 937384389}
-  - component: {fileID: 937384388}
-  - component: {fileID: 937384387}
-  m_Layer: 0
-  m_Name: Sphere (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &937384387
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937384385}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &937384388
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937384385}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &937384389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937384385}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -547.4, y: 0.8085, z: 1138.15}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &952758948 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2812450126215720706, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -4226,8 +4090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &963095274
 GameObject:
   m_ObjectHideFlags: 0
@@ -4405,8 +4267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &996593595
 GameObject:
   m_ObjectHideFlags: 0
@@ -4577,8 +4437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1073458021
 GameObject:
   m_ObjectHideFlags: 0
@@ -5976,8 +5834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1110013604
 GameObject:
   m_ObjectHideFlags: 0
@@ -6062,7 +5918,7 @@ Transform:
   m_GameObject: {fileID: 1110013604}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -564.77, y: 0.8085, z: 1137.1711}
+  m_LocalPosition: {x: -552.23, y: 0.8085, z: 1097.16}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6373,8 +6229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1177050166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3319126006618954949, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -6440,8 +6294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1215820988
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,8 +6412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1001 &1236045303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6637,15 +6487,15 @@ PrefabInstance:
     - target: {fileID: 1469311230527936813, guid: 3600796bc99ce9a419ff10ff063717f2, type: 3}
       propertyPath: 'walkPoints.Array.data[1]'
       value: 
-      objectReference: {fileID: 1707648445}
+      objectReference: {fileID: 0}
     - target: {fileID: 1469311230527936813, guid: 3600796bc99ce9a419ff10ff063717f2, type: 3}
       propertyPath: 'walkPoints.Array.data[2]'
       value: 
-      objectReference: {fileID: 937384389}
+      objectReference: {fileID: 0}
     - target: {fileID: 1469311230527936813, guid: 3600796bc99ce9a419ff10ff063717f2, type: 3}
       propertyPath: 'walkPoints.Array.data[3]'
       value: 
-      objectReference: {fileID: 1600094355}
+      objectReference: {fileID: 0}
     - target: {fileID: 5862738376291065610, guid: 3600796bc99ce9a419ff10ff063717f2, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -6736,8 +6586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1254981311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7768857733823420664, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -6803,8 +6651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1001 &1256965645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7099,8 +6945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1325649582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5218259892561276256, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -7166,8 +7010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1334431891 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8803021497637408217, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -7233,8 +7075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1345828112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8631762989306187355, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -7300,8 +7140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1346356998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7020934829257001747, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -7367,8 +7205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1348554189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2229959557165312394, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -7434,8 +7270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1362830199
 GameObject:
   m_ObjectHideFlags: 0
@@ -7731,8 +7565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1001 &1389448782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8078,8 +7910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1472440295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7447830790414390475, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -8145,8 +7975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1505517057 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3636755131145886555, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -8212,8 +8040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1001 &1514007692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8396,8 +8222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1591501178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -44249954731915090, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -8463,98 +8287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
---- !u!1 &1600094351
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1600094355}
-  - component: {fileID: 1600094354}
-  - component: {fileID: 1600094353}
-  m_Layer: 0
-  m_Name: Sphere (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1600094353
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600094351}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1600094354
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600094351}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1600094355
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600094351}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -554.13, y: 0.8085, z: 1121.78}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1628702684
 GameObject:
   m_ObjectHideFlags: 0
@@ -8818,8 +8550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1656439601
 GameObject:
   m_ObjectHideFlags: 0
@@ -9128,8 +8858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1672888637
 GameObject:
   m_ObjectHideFlags: 0
@@ -9161,96 +8889,6 @@ Transform:
   m_Children:
   - {fileID: 1305479316710416484}
   - {fileID: 6480438959710750013}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1707648441
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1707648445}
-  - component: {fileID: 1707648444}
-  - component: {fileID: 1707648443}
-  m_Layer: 0
-  m_Name: Sphere (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1707648443
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707648441}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1707648444
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707648441}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1707648445
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707648441}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -556.3, y: 0.8085, z: 1155.77}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727300982
@@ -9386,8 +9024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1739714297 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4481535122845315347, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9453,8 +9089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1763218590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8462603642325667245, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9520,8 +9154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1767631039 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4798269601464381603, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9587,8 +9219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1834331239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4299824886453466350, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9654,8 +9284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!4 &1837963832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7739908613452131263, guid: ea10f43591ef61144b448628f98c493d, type: 3}
@@ -9726,8 +9354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1866775927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3369722782244705162, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9793,8 +9419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1915473827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -568951930507225226, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9860,8 +9484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1931597148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4489472968480927218, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9927,8 +9549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1976944633 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1856265119691416416, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -9994,8 +9614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1977920088
 GameObject:
   m_ObjectHideFlags: 0
@@ -10092,8 +9710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &1988917090 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -349795344896497042, guid: d56c99b2401588746a7a5287e807c3d5, type: 3}
@@ -10159,8 +9775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &2025342459
 GameObject:
   m_ObjectHideFlags: 0
@@ -10478,8 +10092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!1 &2081194090
 GameObject:
   m_ObjectHideFlags: 0
@@ -10662,8 +10274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85ea2c6d5d7f4c9219fb2a439ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  _rb: {fileID: 1931597153}
-  _collider: {fileID: 1931597152}
 --- !u!33 &485893961992946546
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10829,7 +10439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8753160571720714888, guid: ea10f43591ef61144b448628f98c493d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -306.92
+      value: -552
       objectReference: {fileID: 0}
     - target: {fileID: 8753160571720714888, guid: ea10f43591ef61144b448628f98c493d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11102,9 +10712,6 @@ MonoBehaviour:
   animator: {fileID: 918549821}
   walkPoints:
   - {fileID: 1110013608}
-  - {fileID: 1707648445}
-  - {fileID: 937384389}
-  - {fileID: 1600094355}
   DirtType: 1
   Damage: 20
   LifetimeAfterHit: 3
@@ -11123,66 +10730,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VoceGuy
   obstacle: {fileID: 6887922084811190659}
   apples:
-  - {fileID: 1345828112}
-  - {fileID: 2093820925}
-  - {fileID: 770373200}
-  - {fileID: 1729052867}
-  - {fileID: 1915473827}
-  - {fileID: 1325649582}
-  - {fileID: 1866775927}
-  - {fileID: 964003973}
-  - {fileID: 1300110704}
-  - {fileID: 1387157800}
-  - {fileID: 781126937}
-  - {fileID: 1101441849}
-  - {fileID: 12837260}
-  - {fileID: 255753340}
-  - {fileID: 1669437676}
-  - {fileID: 1981216323}
-  - {fileID: 46245497}
-  - {fileID: 63824859}
-  - {fileID: 559323791}
-  - {fileID: 260012945}
-  - {fileID: 1334431891}
-  - {fileID: 1645741098}
-  - {fileID: 1346356998}
-  - {fileID: 1834331239}
-  - {fileID: 1763218590}
-  - {fileID: 20345959}
-  - {fileID: 1591501178}
-  - {fileID: 1177050166}
-  - {fileID: 1739714297}
-  - {fileID: 699319149}
-  - {fileID: 170019264}
-  - {fileID: 1254981311}
-  - {fileID: 866105816}
-  - {fileID: 1238195293}
-  - {fileID: 1432533415}
-  - {fileID: 494701294}
-  - {fileID: 646681704}
-  - {fileID: 542608522}
-  - {fileID: 2070312464}
-  - {fileID: 1505517057}
-  - {fileID: 1533785646}
-  - {fileID: 1976944633}
-  - {fileID: 1071887229}
-  - {fileID: 912692852}
-  - {fileID: 1231880066}
-  - {fileID: 1472440295}
-  - {fileID: 317947882}
-  - {fileID: 609969614}
-  - {fileID: 1848509422}
-  - {fileID: 864997244}
-  - {fileID: 1767631039}
-  - {fileID: 408571041}
-  - {fileID: 1170409412}
-  - {fileID: 1348554189}
-  - {fileID: 659216210}
-  - {fileID: 200988634}
-  - {fileID: 1988917090}
-  - {fileID: 952758948}
-  - {fileID: 913526250}
-  - {fileID: 1931597148}
+  - {fileID: 1345828118}
+  - {fileID: 2093820931}
+  - {fileID: 770373206}
+  - {fileID: 1729052873}
+  - {fileID: 1915473833}
+  - {fileID: 1325649588}
+  - {fileID: 1866775933}
+  - {fileID: 964003979}
+  - {fileID: 1300110710}
+  - {fileID: 1387157806}
+  - {fileID: 781126943}
+  - {fileID: 1101441855}
+  - {fileID: 12837266}
+  - {fileID: 255753346}
+  - {fileID: 1669437682}
+  - {fileID: 1981216329}
+  - {fileID: 46245503}
+  - {fileID: 63824865}
+  - {fileID: 559323797}
+  - {fileID: 260012951}
+  - {fileID: 1334431897}
+  - {fileID: 1645741104}
+  - {fileID: 1346357004}
+  - {fileID: 1834331245}
+  - {fileID: 1763218596}
+  - {fileID: 20345965}
+  - {fileID: 1591501184}
+  - {fileID: 1177050172}
+  - {fileID: 1739714303}
+  - {fileID: 699319155}
+  - {fileID: 170019270}
+  - {fileID: 1254981317}
+  - {fileID: 866105822}
+  - {fileID: 1238195299}
+  - {fileID: 1432533421}
+  - {fileID: 494701300}
+  - {fileID: 646681710}
+  - {fileID: 542608528}
+  - {fileID: 2070312470}
+  - {fileID: 1505517063}
+  - {fileID: 1533785652}
+  - {fileID: 1976944639}
+  - {fileID: 1071887235}
+  - {fileID: 912692858}
+  - {fileID: 1231880072}
+  - {fileID: 1472440301}
+  - {fileID: 317947888}
+  - {fileID: 609969620}
+  - {fileID: 1848509428}
+  - {fileID: 864997250}
+  - {fileID: 1767631045}
+  - {fileID: 408571047}
+  - {fileID: 1170409418}
+  - {fileID: 1348554195}
+  - {fileID: 659216216}
+  - {fileID: 200988640}
+  - {fileID: 1988917096}
+  - {fileID: 952758954}
+  - {fileID: 913526256}
+  - {fileID: 1931597154}
 --- !u!1001 &8621924580019595384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11302,6 +10909,3 @@ SceneRoots:
   - {fileID: 587560300}
   - {fileID: 1672888638}
   - {fileID: 1110013608}
-  - {fileID: 1707648445}
-  - {fileID: 937384389}
-  - {fileID: 1600094355}

@@ -27,5 +27,6 @@ public class CarPartsController : MonoBehaviour
 public enum DirtType
 {
     None,
-    Dirt
+    Dirt,
+    Apples
 }

@@ -1,14 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
-public class KarnevalSceneController : MonoBehaviour
+public class NocVjesticaSceneController : MonoBehaviour
 {
     private float fadeDuration = 2;
     private bool _isTransitioning = false;
 
     private void Start()
     {
-        SoundManager.MonoInstance.PlayKarnevalBackground();
+        SoundManager.MonoInstance.PlayNocVjesticaBackground();
     }
 
     void Update()
@@ -27,7 +27,7 @@ public class KarnevalSceneController : MonoBehaviour
     {
         _isTransitioning = true;
         yield return new WaitForSeconds(delay);
-        SceneController.Instance.LoadSceneByIndex(1);
+        SceneController.Instance.LoadSceneByIndex(2);
     }
 
     IEnumerator PlayBirdDelayed(float delay)
