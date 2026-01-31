@@ -9,7 +9,7 @@ public class GameplaySceneController : MonoBehaviour
     private float _playerHealth = 100;
     private bool _isFasterFromPolice;
 
-
+    private bool _isInGame = false;
     private void Awake()
     {
         _carMovement.Init(_playerInput, OnCarSpeedChange, OnCarDamageReceived, OnGameFinish);
@@ -18,6 +18,7 @@ public class GameplaySceneController : MonoBehaviour
 
     private void OnCarSpeedChange(float speed)
     {
+        if (!_isInGame) { return; }
         bool newIsFaster = speed > 100f;
 
         // Only react if state changed
@@ -34,7 +35,7 @@ public class GameplaySceneController : MonoBehaviour
     {
         _playerHealth = _playerHealth - damage;
         _playerHealth = _playerHealth < 0 ? 0 : _playerHealth;
-
+        _uiManager.SetDamageSlider(_playerHealth / 100);
         if (_playerHealth == 0)
         {
             Debug.Log("Brken !!");
@@ -43,12 +44,15 @@ public class GameplaySceneController : MonoBehaviour
 
     private void OnGameFinish()
     {
+        _isInGame = false;
         _uiManager.OnGameFinish();
+
     }
 
     private void StartGame()
     {
         _carMovement.TurnOn();
+        _isInGame = true;
     }
 
     private void Update()

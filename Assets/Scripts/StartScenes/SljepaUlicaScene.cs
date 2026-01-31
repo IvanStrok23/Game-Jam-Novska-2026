@@ -1,10 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-public class NocVjesticaSceneController : MonoBehaviour
+public class SljepaUlicaScene : MonoBehaviour
 {
-    [SerializeField] private Animator bird;
-    private float fadeDuration = 4;
+    private float fadeDuration = 2;
     private bool _isTransitioning = false;
 
     private void Start()
@@ -20,8 +19,6 @@ public class NocVjesticaSceneController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
         {
             StartCoroutine(ChangeSceneDelayed(fadeDuration));
-            SoundManager.MonoInstance.PlayBirdSound();
-            StartCoroutine(PlayBirdDelayed(0.1f));
         }
     }
 
@@ -29,13 +26,7 @@ public class NocVjesticaSceneController : MonoBehaviour
     {
         _isTransitioning = true;
         yield return new WaitForSeconds(delay);
-        SceneController.Instance.LoadSceneByIndex(2);
-    }
-
-    IEnumerator PlayBirdDelayed(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        bird.enabled = true;
+        SceneController.Instance.LoadSceneByIndex(3);
     }
 
 }

@@ -1,10 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private UIKeysPanel _keysPanel;
     [SerializeField] private PoliceMeter _policeMeter;
+    [SerializeField] private Slider _damageSlider;
     [SerializeField] private StripController _startStrip;
     [SerializeField] private StripController _endStrip;
 
@@ -20,6 +22,7 @@ public class UIManager : MonoBehaviour
         _playerInput.RegisterOnWipersKeyDown((keyCode) => _keysPanel.ShowWipersIndicator(keyCode));
         _playerInput.RegisterOnLightKeyDown((keyCode) => _keysPanel.ShowLightIndicator(keyCode));
         _startStrip?.StartStrip(() => onStartGame());
+        _damageSlider.value = 1;
     }
 
 
@@ -33,6 +36,7 @@ public class UIManager : MonoBehaviour
         _policeMeterRoutine = StartCoroutine(PoliceMeterRoutine());
     }
 
+    public void SetDamageSlider(float value) => _damageSlider.value = value;
     private IEnumerator PoliceMeterRoutine()
     {
         while (true)

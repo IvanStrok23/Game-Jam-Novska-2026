@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class KarnevalSceneController : MonoBehaviour
 {
-    private float fadeDuration = 2;
+    [SerializeField] private Animator bird;
+    private float fadeDuration = 4;
     private bool _isTransitioning = false;
 
     private void Start()
@@ -19,7 +20,8 @@ public class KarnevalSceneController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
         {
             StartCoroutine(ChangeSceneDelayed(fadeDuration));
-            StartCoroutine(PlayBirdDelayed(fadeDuration / 2));
+            SoundManager.MonoInstance.PlayBirdSound();
+            StartCoroutine(PlayBirdDelayed(0.1f));
         }
     }
 
@@ -33,7 +35,7 @@ public class KarnevalSceneController : MonoBehaviour
     IEnumerator PlayBirdDelayed(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SoundManager.MonoInstance.PlayBirdSound();
+        bird.enabled = true;
     }
 
 }

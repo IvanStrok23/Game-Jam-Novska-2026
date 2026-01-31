@@ -10,6 +10,9 @@ EditorBuildSettings:
     guid: a3e35ffc7a06c4f4095ef76a5548e2bb
   - enabled: 1
     path: Assets/Scenes/Noc Vjestica.unity
+    guid: 3f995874739d4254e880ec696f29b7f5
+  - enabled: 1
+    path: Assets/Scenes/Sljepa Ulica.unity
     guid: 999312b18c831964f9c54915d5b8012f
   - enabled: 1
     path: Assets/Scenes/Ivan/Ivan_test.unity
