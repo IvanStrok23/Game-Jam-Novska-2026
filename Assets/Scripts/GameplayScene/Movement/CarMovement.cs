@@ -203,11 +203,11 @@ public class CarMovement : MonoBehaviour
 
             }
         }
-        if (collision.gameObject.CompareTag("FinishGame"))
-        {
-            _onGameFinish?.Invoke();
-            ResetCar();
-        }
+        //if (collision.gameObject.CompareTag("FinishGame"))
+        //{
+        //    _onGameFinish?.Invoke();
+        //    ResetCar();
+        //}
     }
 
 

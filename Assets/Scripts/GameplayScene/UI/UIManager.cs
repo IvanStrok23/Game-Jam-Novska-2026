@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
         _playerInput.RegisterOnHornsKeyDown((keyCode) => _keysPanel.ShowHornsIndicator(keyCode));
         _playerInput.RegisterOnWipersKeyDown((keyCode) => _keysPanel.ShowWipersIndicator(keyCode));
         _playerInput.RegisterOnLightKeyDown((keyCode) => _keysPanel.ShowLightIndicator(keyCode));
-        _startStrip.StartStrip(() => onStartGame());
+        _startStrip?.StartStrip(() => onStartGame());
     }
 
 
