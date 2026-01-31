@@ -582,6 +582,8 @@ MonoBehaviour:
   _birdSound: {fileID: 8300000, guid: a9d525c4e61288b459341141fc88e7ff, type: 3}
   _karnevalBackground: {fileID: 8300000, guid: 6237c7f515a911d4ca3695666f1a13ce, type: 3}
   _nocVjesticaBackground: {fileID: 8300000, guid: d3a51e134552aa44c9ae4476480250e4, type: 3}
+  _firstBuildingHitSound: {fileID: 0}
+  _firstPeopleHitSound: {fileID: 0}
 --- !u!4 &762948425
 Transform:
   m_ObjectHideFlags: 0
