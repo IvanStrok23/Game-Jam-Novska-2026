@@ -11142,7 +11142,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -48677,7 +48677,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -79680,7 +79680,7 @@ ConfigurableJoint:
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
-  m_ConnectedMassScale: 1
+  m_ConnectedMassScale: 0.00001
 --- !u!54 &1760512970
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98027,7 +98027,7 @@ MonoBehaviour:
   - {fileID: 6329905634693290992}
   - {fileID: 5861129878117795453}
   - {fileID: 7922289806794414865}
-  brakeForce: 500
+  brakeForce: 1000
   gearRatios:
   - 5.5
   - 3.5

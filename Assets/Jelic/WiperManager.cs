@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class WiperManager : MonoBehaviour
 {
+
+
+
     [SerializeField] private Renderer glass;
     [SerializeField] private float startDuration;
     [SerializeField] private float endDuration;
@@ -39,6 +42,12 @@ public class WiperManager : MonoBehaviour
         {
             EndDirtyGlass();
         }
+
+    }
+
+    private float Smooth(float currentPosition, float targetPosition, float decay, float deltaTime)
+    {
+        return targetPosition + (currentPosition - targetPosition) * Mathf.Exp(-decay * deltaTime);
     }
 
     private void SetParticleSimulationState(bool shouldSimulate)
