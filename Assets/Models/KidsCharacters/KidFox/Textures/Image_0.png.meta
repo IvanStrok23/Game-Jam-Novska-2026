@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Jelic/Shaders/WiperMask.png.meta
+guid: a39e3783fbc47f64c92f0dbd338d9d95
+========
 guid: 4e2553a5eefa85b4ba73154b0368e7fc
+>>>>>>>> 7038256fca1f90e5a1d74a3ef753be4ebf2105e8:Assets/Models/KidsCharacters/KidFox/Textures/Image_0.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

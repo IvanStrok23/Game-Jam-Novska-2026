@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Jelic/Shaders/WiperMaskFlipped.png.meta
+guid: ea5c0823119c7984cadb323b7dcad284
+========
 guid: a39e3783fbc47f64c92f0dbd338d9d95
+>>>>>>>> 7038256fca1f90e5a1d74a3ef753be4ebf2105e8:Assets/Jelic/Shaders/WiperMask.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -82,6 +86,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
