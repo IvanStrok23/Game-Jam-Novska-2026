@@ -40624,34 +40624,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc5822771a8b78f479403032fe8c0156, type: 3}
---- !u!1 &1047949746 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8427494074142839386, guid: ea10f43591ef61144b448628f98c493d, type: 3}
-  m_PrefabInstance: {fileID: 2363918558397575431}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1047949750 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6078851755197805681, guid: ea10f43591ef61144b448628f98c493d, type: 3}
   m_PrefabInstance: {fileID: 2363918558397575431}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047949746}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7498ac679e68aa14484ef7010edd54bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarMovement
---- !u!114 &1047949752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047949746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f827dabdb8609684299a9cd9067050e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarPartsController
 --- !u!1001 &1048566026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80945,14 +80928,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6078851755197805681, guid: ea10f43591ef61144b448628f98c493d, type: 3}
-      propertyPath: playerInput
-      value: 
-      objectReference: {fileID: 1215820989}
-    - target: {fileID: 6078851755197805681, guid: ea10f43591ef61144b448628f98c493d, type: 3}
-      propertyPath: partsController
-      value: 
-      objectReference: {fileID: 1047949752}
     - target: {fileID: 8427494074142839386, guid: ea10f43591ef61144b448628f98c493d, type: 3}
       propertyPath: m_Name
       value: Car
@@ -81000,10 +80975,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8427494074142839386, guid: ea10f43591ef61144b448628f98c493d, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1047949752}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea10f43591ef61144b448628f98c493d, type: 3}
 --- !u!23 &2403456217025886136
 MeshRenderer:
