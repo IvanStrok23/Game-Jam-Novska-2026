@@ -177,8 +177,8 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
-    - _DrainDirection: -1
-    - _DrainSpeed: 0.01
+    - _DrainDirection: 1
+    - _DrainSpeed: -0.01
     - _DstBlend: 0
     - _DstBlend2: 0
     - _Edge: 0
@@ -235,6 +235,8 @@ Material:
     - _Smoothness: 1
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
+    - _Sp1: -0.03
+    - _Sp2: 0.06
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
