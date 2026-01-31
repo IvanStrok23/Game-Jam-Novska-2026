@@ -196,7 +196,7 @@ public class CarMovement : MonoBehaviour
                 AbsorbDamage(damageReceived);
                 partsController.OnGetDirty(dirtType);
 
-                if (obsticle)
+                //  if (obsticle)
 
             }
         }
