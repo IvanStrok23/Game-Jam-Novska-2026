@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953beb541740ddc499d005ee80c9ff29, type: 3}
   m_Name: Fog
   m_EditorClassIdentifier: Unity.RenderPipelines.HighDefinition.Runtime::UnityEngine.Rendering.HighDefinition.Fog
-  active: 0
+  active: 1
   quality:
     m_OverrideState: 0
     m_Value: 1
@@ -29,8 +29,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   maxFogDistance:
-    m_OverrideState: 0
-    m_Value: 5000
+    m_OverrideState: 1
+    m_Value: 567
   mipFogMaxMip:
     m_OverrideState: 0
     m_Value: 0.5
@@ -41,14 +41,14 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1000
   baseHeight:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 57.4
   maximumHeight:
     m_OverrideState: 0
     m_Value: 57.4
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 120.5
+    m_Value: 157.4
   enableVolumetricFog:
     m_OverrideState: 0
     m_Value: 0
@@ -373,13 +373,13 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   middle:
     m_OverrideState: 1
-    m_Value: {r: 0.00066749885, g: 0.005691564, b: 0.009433985, a: 1}
+    m_Value: {r: 0.0014515102, g: 0, b: 0.16981131, a: 1}
   bottom:
     m_OverrideState: 1
-    m_Value: {r: 0.254717, g: 0.0036045192, b: 0.0036044791, a: 1}
+    m_Value: {r: 0.21698111, g: 0.12724212, b: 0, a: 1}
   gradientDiffusion:
     m_OverrideState: 0
     m_Value: 0.17
