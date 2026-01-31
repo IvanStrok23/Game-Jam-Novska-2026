@@ -6,6 +6,8 @@ public class WiperManager : MonoBehaviour
     [SerializeField] private Renderer glass;
     [SerializeField] private float cleanDuration;
     [SerializeField] private AnimationCurve curve;
+
+    [SerializeField] private WiperAnimator[] wiperAnimators;
     private float clenliness;
     private Coroutine animationCorutine;
 
@@ -18,8 +20,13 @@ public class WiperManager : MonoBehaviour
                 StopCoroutine(animationCorutine);
             }
             animationCorutine = StartCoroutine(AnimateCleaning());
+
+            for (int i = 0; i < wiperAnimators.Length; i++)
+            {
+                wiperAnimators[i].AnimateWiper();
+            }
         }
-        glass.material.SetFloat("_WiperMaskStrength", clenliness);
+        glass.material.SetFloat("_WiperMaskDirtyness", clenliness);
     }
 
     private IEnumerator AnimateCleaning()
@@ -36,4 +43,9 @@ public class WiperManager : MonoBehaviour
     }
 
 
+}
+
+[System.Serializable]
+public struct DirtyGlassShaderDate
+{
 }
