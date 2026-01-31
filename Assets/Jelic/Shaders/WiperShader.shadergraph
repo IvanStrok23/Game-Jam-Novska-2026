@@ -42,6 +42,15 @@
     "m_CategoryData": [
         {
             "m_Id": "8160244433a14a5eb9d107412a377718"
+        },
+        {
+            "m_Id": "590a99279891455c9bdd39ecc64c7620"
+        },
+        {
+            "m_Id": "483c842222314e9babe71ba00e319e4b"
+        },
+        {
+            "m_Id": "f4352879ca924510b1490a15f3d71f3c"
         }
     ],
     "m_Nodes": [
@@ -910,7 +919,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "16d3062b227b4147b466fd75b885880f",
     "m_Id": 0,
-    "m_DisplayName": "MaskOffset",
+    "m_DisplayName": "WiperMaskOffset",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -968,10 +977,10 @@
     "promotedFromAssetID": "",
     "promotedFromCategoryName": "",
     "promotedOrdering": -1,
-    "m_Name": "WiperMaskStrength",
+    "m_Name": "WiperMaskDirtyness",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "WiperMaskStrength",
-    "m_DefaultReferenceName": "_WiperMaskStrength",
+    "m_RefNameGeneratedByDisplayName": "WiperMaskDirtyness",
+    "m_DefaultReferenceName": "_WiperMaskDirtyness",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1319,7 +1328,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "2dce6bda7e2847f3a86c8f7fc3806492",
     "m_Id": 0,
-    "m_DisplayName": "MaskTiling",
+    "m_DisplayName": "WiperMaskTiling",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1403,10 +1412,10 @@
     "promotedFromAssetID": "",
     "promotedFromCategoryName": "",
     "promotedOrdering": -1,
-    "m_Name": "MaskTiling",
+    "m_Name": "WiperMaskTiling",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "MaskTiling",
-    "m_DefaultReferenceName": "_MaskTiling",
+    "m_RefNameGeneratedByDisplayName": "WiperMaskTiling",
+    "m_DefaultReferenceName": "_WiperMaskTiling",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1523,7 +1532,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "328be7e0ee634e249fb16cb846821096",
     "m_Id": 0,
-    "m_DisplayName": "WiperMaskStrength",
+    "m_DisplayName": "WiperMaskDirtyness",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1637,7 +1646,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "3c86f8c7d7ef4b418b3b6bf5ae3d515f",
     "m_Id": 0,
-    "m_DisplayName": "WiperMask",
+    "m_DisplayName": "DirtWiperMask",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1724,10 +1733,10 @@
     "promotedFromAssetID": "",
     "promotedFromCategoryName": "",
     "promotedOrdering": -1,
-    "m_Name": "Color",
+    "m_Name": "DirtColor",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Color",
-    "m_DefaultReferenceName": "_Color",
+    "m_RefNameGeneratedByDisplayName": "DirtColor",
+    "m_DefaultReferenceName": "_DirtColor",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1746,7 +1755,7 @@
         "a": 1.0
     },
     "isMainColor": false,
-    "m_ColorMode": 0
+    "m_ColorMode": 1
 }
 
 {
@@ -1763,6 +1772,24 @@
     "m_DefaultValue": 0.0,
     "m_Labels": [],
     "m_LiteralMode": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "483c842222314e9babe71ba00e319e4b",
+    "m_Name": "Noise Settings",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "3a861cd854924252a70d9a960f0e5917"
+        },
+        {
+            "m_Id": "d1be95382f0c4d3c8644b7d2b9233a86"
+        },
+        {
+            "m_Id": "3074c2a2982e47988df46e86c6e7eef8"
+        }
+    ]
 }
 
 {
@@ -1891,10 +1918,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 727.9999389648438,
+            "x": 729.0000610351563,
             "y": -270.0,
-            "width": 105.00006103515625,
-            "height": 33.999969482421878
+            "width": 105.0,
+            "height": 33.99998474121094
         }
     },
     "m_Slots": [
@@ -2120,6 +2147,27 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "590a99279891455c9bdd39ecc64c7620",
+    "m_Name": "General",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "4465ce525a6344b4a2f6db9c229e854c"
+        },
+        {
+            "m_Id": "cf4eaefae5ea4a45be0aa42eeccd4a98"
+        },
+        {
+            "m_Id": "260679a429b74fc5bd03189e30ae262f"
+        },
+        {
+            "m_Id": "e6c41d1fca7f44a9935723ed702b981b"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "5bffff86e8db4079b48c40c0a661e551",
     "m_Id": 1,
@@ -2149,10 +2197,10 @@
     "promotedFromAssetID": "",
     "promotedFromCategoryName": "",
     "promotedOrdering": -1,
-    "m_Name": "MaskOffset",
+    "m_Name": "WiperMaskOffset",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "MaskOffset",
-    "m_DefaultReferenceName": "_MaskOffset",
+    "m_RefNameGeneratedByDisplayName": "WiperMaskOffset",
+    "m_DefaultReferenceName": "_WiperMaskOffset",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -2573,7 +2621,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "782cacf16bc54891ac287ff401d81fa2",
     "m_Id": 0,
-    "m_DisplayName": "Color",
+    "m_DisplayName": "DirtColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2720,41 +2768,7 @@
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "8160244433a14a5eb9d107412a377718",
     "m_Name": "",
-    "m_ChildObjectList": [
-        {
-            "m_Id": "4465ce525a6344b4a2f6db9c229e854c"
-        },
-        {
-            "m_Id": "3a861cd854924252a70d9a960f0e5917"
-        },
-        {
-            "m_Id": "d1be95382f0c4d3c8644b7d2b9233a86"
-        },
-        {
-            "m_Id": "3074c2a2982e47988df46e86c6e7eef8"
-        },
-        {
-            "m_Id": "aea5433c3b8f45ea811db1cdc946dddc"
-        },
-        {
-            "m_Id": "1a0189cac12e483ab94fbdb6730df247"
-        },
-        {
-            "m_Id": "303c6a2e53d24767b6e17c4c5f51d992"
-        },
-        {
-            "m_Id": "5e09dfcadbdf4b98b0aa7e820ac54be5"
-        },
-        {
-            "m_Id": "cf4eaefae5ea4a45be0aa42eeccd4a98"
-        },
-        {
-            "m_Id": "260679a429b74fc5bd03189e30ae262f"
-        },
-        {
-            "m_Id": "e6c41d1fca7f44a9935723ed702b981b"
-        }
-    ]
+    "m_ChildObjectList": []
 }
 
 {
@@ -3556,10 +3570,10 @@
     "promotedFromAssetID": "",
     "promotedFromCategoryName": "",
     "promotedOrdering": -1,
-    "m_Name": "WiperMask",
+    "m_Name": "DirtWiperMask",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "WiperMask",
-    "m_DefaultReferenceName": "_WiperMask",
+    "m_RefNameGeneratedByDisplayName": "DirtWiperMask",
+    "m_DefaultReferenceName": "_DirtWiperMask",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -3572,7 +3586,7 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a39e3783fbc47f64c92f0dbd338d9d95\",\"type\":3}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -5309,6 +5323,27 @@
         "w": 0.0
     },
     "m_LiteralMode": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "f4352879ca924510b1490a15f3d71f3c",
+    "m_Name": "WiperMaskSettings",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "aea5433c3b8f45ea811db1cdc946dddc"
+        },
+        {
+            "m_Id": "1a0189cac12e483ab94fbdb6730df247"
+        },
+        {
+            "m_Id": "303c6a2e53d24767b6e17c4c5f51d992"
+        },
+        {
+            "m_Id": "5e09dfcadbdf4b98b0aa7e820ac54be5"
+        }
+    ]
 }
 
 {
