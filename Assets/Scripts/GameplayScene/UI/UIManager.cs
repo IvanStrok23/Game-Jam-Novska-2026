@@ -5,6 +5,8 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private UIKeysPanel _keysPanel;
     [SerializeField] private PoliceMeter _policeMeter;
+    [SerializeField] private StripController _startStrip;
+    [SerializeField] private StripController _endStrip;
 
     private PlayerInput _playerInput;
     private Coroutine _policeMeterRoutine;
@@ -17,6 +19,7 @@ public class UIManager : MonoBehaviour
         _playerInput.RegisterOnHornsKeyDown((keyCode) => _keysPanel.ShowHornsIndicator(keyCode));
         _playerInput.RegisterOnWipersKeyDown((keyCode) => _keysPanel.ShowWipersIndicator(keyCode));
         _playerInput.RegisterOnLightKeyDown((keyCode) => _keysPanel.ShowLightIndicator(keyCode));
+        _startStrip.StartStrip(() => onStartGame());
     }
 
 
@@ -58,5 +61,10 @@ public class UIManager : MonoBehaviour
                 _keysPanel.ShowTurnBreakIndicator();
                 break;
         }
+    }
+
+    internal void OnGameFinish()
+    {
+        _endStrip.StartStrip(null);
     }
 }
