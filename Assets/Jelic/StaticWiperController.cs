@@ -3,7 +3,6 @@ using UnityEngine;
 public class StaticWiperController : MonoBehaviour
 {
 
-    [SerializeField] private Transform fakeCarTransform;
     [SerializeField] private Transform carTransform;
 
     [SerializeField] private Transform playerCamera;

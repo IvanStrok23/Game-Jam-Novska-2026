@@ -3965,8 +3965,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WiperManager
   glass: {fileID: 7200404627475398311}
-  cleanDuration: 3
-  curve:
+  startDuration: 0.5
+  endDuration: 2
+  startCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -3990,9 +3991,44 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  stopCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   wiperAnimators:
   - {fileID: 1621208177}
   - {fileID: 1112633665}
+  wiperParticles:
+  - {fileID: 1145958989}
+  - {fileID: 263878969}
+  dirtyGlassData:
+  - color: {r: 0.16620687, g: 0.7830189, b: 0.24489102, a: 1}
+    drainSpeedMultiplier: 1
+    noiseScale: 13
+  - color: {r: 0.9339623, g: 0.8738705, b: 0.022027409, a: 1}
+    drainSpeedMultiplier: 1
+    noiseScale: 13
+  test: 0
 --- !u!4 &84301531
 Transform:
   m_ObjectHideFlags: 0
@@ -4002,10 +4038,13 @@ Transform:
   m_GameObject: {fileID: 84301529}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08993, y: 1.90556, z: 1.64694}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1225980071}
+  - {fileID: 1145958987}
+  - {fileID: 263878967}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &84409756
@@ -10919,7 +10958,7 @@ GameObject:
   - component: {fileID: 263878969}
   - component: {fileID: 263878968}
   m_Layer: 18
-  m_Name: Trail (1)
+  m_Name: RightWiperTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10933,12 +10972,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263878966}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0011410712, y: -0.08145083, z: -0.029836118, w: 0.99623}
-  m_LocalPosition: {x: 0.00252, y: 0.00013, z: 0.00041}
+  m_LocalRotation: {x: -0.43921924, y: 0.015727133, z: 0.0962078, w: 0.8930751}
+  m_LocalPosition: {x: 0.45804203, y: 1.7826173, z: 1.9010887}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1112633664}
+  m_Father: {fileID: 84301531}
   m_LocalEulerAnglesHint: {x: -0.148, y: -9.344, z: -3.419}
 --- !u!199 &263878968
 ParticleSystemRenderer:
@@ -11093,7 +11132,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 2
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 1555291579053328566}
   scalingMode: 1
   randomSeed: 0
@@ -11103,7 +11142,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -46604,7 +46643,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 511064046}
-  - {fileID: 263878967}
   m_Father: {fileID: 1555291579053328566}
   m_LocalEulerAnglesHint: {x: -53.801, y: 9.959, z: 6.132}
 --- !u!114 &1112633665
@@ -46646,7 +46684,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   closedRotaion: 6.132
-  openRotation: 91.307
+  openRotation: 130
   wipeAmount: 2
 --- !u!23 &1112633666
 MeshRenderer:
@@ -48455,7 +48493,7 @@ GameObject:
   - component: {fileID: 1145958989}
   - component: {fileID: 1145958988}
   m_Layer: 18
-  m_Name: Trail
+  m_Name: LeftWiperTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48469,12 +48507,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145958986}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00312, y: -0, z: 0}
+  m_LocalRotation: {x: -0.43936208, y: -0.01103941, z: 0.041663624, w: 0.8972755}
+  m_LocalPosition: {x: -0.40022278, y: 1.7305541, z: 1.8927584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1621208176}
+  m_Father: {fileID: 84301531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &1145958988
 ParticleSystemRenderer:
@@ -48629,7 +48667,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 2
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 1555291579053328566}
   scalingMode: 1
   randomSeed: 0
@@ -48639,7 +48677,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -56220,7 +56258,7 @@ GameObject:
   - component: {fileID: 1225980071}
   - component: {fileID: 1225980070}
   m_Layer: 0
-  m_Name: StaticController
+  m_Name: WiperParticleController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56238,7 +56276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ca89927edeb7c4f8e0526e03470cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StaticWiperController
-  fakeCarTransform: {fileID: 1225980071}
   carTransform: {fileID: 1555291579053328566}
   playerCamera: {fileID: 3660395780310393265}
   rtCamera: {fileID: 1800609940}
@@ -56254,12 +56291,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225980069}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5007, y: 6.06, z: 0.16}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5007, y: 6.06, z: 0.15999997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 84301531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1226864401
 PrefabInstance:
@@ -73985,12 +74022,11 @@ Transform:
   m_GameObject: {fileID: 1621208175}
   serializedVersion: 2
   m_LocalRotation: {x: -0.43936208, y: -0.01103941, z: 0.041663624, w: 0.8972755}
-  m_LocalPosition: {x: -0.71106356, y: 1.7042, z: 1.898}
+  m_LocalPosition: {x: -0.64, y: 1.71, z: 1.897}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 495076693}
-  - {fileID: 1145958987}
   m_Father: {fileID: 1555291579053328566}
   m_LocalEulerAnglesHint: {x: -51.956, y: -5.253, z: 7.878}
 --- !u!114 &1621208177
@@ -79653,7 +79689,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760512968}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: -0.2562202, z: 0}
@@ -99743,4 +99779,3 @@ SceneRoots:
   - {fileID: 84301531}
   - {fileID: 811852521}
   - {fileID: 1760512971}
-  - {fileID: 1225980071}

@@ -182,7 +182,7 @@ Material:
     - _DstBlend: 0
     - _DstBlend2: 0
     - _Edge: 0
-    - _Edge2: 0.846
+    - _Edge2: 0.396
     - _EdgeSharpness: 0.178
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
@@ -217,6 +217,7 @@ Material:
     - _NormalScale: 1
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
+    - _Opacity: 1
     - _OpaqueCullMode: 2
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
