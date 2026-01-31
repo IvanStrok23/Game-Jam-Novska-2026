@@ -194,9 +194,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5200571239756769487}
     m_Modifications:
+    - target: {fileID: 1634132520618398657, guid: ebdf4da509da8c347af84b2c6d037e02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6120380010331564210, guid: ebdf4da509da8c347af84b2c6d037e02, type: 3}
       propertyPath: m_Name
       value: Radnici Staklo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802490228964696512, guid: ebdf4da509da8c347af84b2c6d037e02, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6802490228964696512, guid: ebdf4da509da8c347af84b2c6d037e02, type: 3}
       propertyPath: m_IsActive

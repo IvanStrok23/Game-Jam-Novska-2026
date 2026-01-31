@@ -188,6 +188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_EN2_ANM_SisterMadeline_Navigation
       objectReference: {fileID: 0}
+    - target: {fileID: 5502006437618269668, guid: 74a2f06bdeda0dc4898597b99bf46eb4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6881572898288402658, guid: 74a2f06bdeda0dc4898597b99bf46eb4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

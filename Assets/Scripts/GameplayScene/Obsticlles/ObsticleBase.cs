@@ -11,6 +11,10 @@ public class ObstacleBase : MonoBehaviour
     [SerializeField] private float _lifetimeAfterHit = 3;
     [SerializeField] private AudioClip _hitSound;
 
+    private float _hornSpeedMultiplier = 2f;
+    private float _defaultSpeed;
+    private bool _isHornAffected = true;
+
     private int _currentPointIndex = 0;
     public bool IsHit = false;
     private Action _onHit;
@@ -23,6 +27,8 @@ public class ObstacleBase : MonoBehaviour
     {
         if (_agent == null)
             _agent = GetComponent<NavMeshAgent>();
+
+        _defaultSpeed = _agent.speed;
 
         GoToNextPoint();
     }
@@ -44,6 +50,9 @@ public class ObstacleBase : MonoBehaviour
     void GoToNextPoint()
     {
         if (_walkPoints.Length == 0) return;
+
+        _agent.speed = _defaultSpeed;
+
 
         _agent.destination = _walkPoints[_currentPointIndex].position;
         _currentPointIndex = (_currentPointIndex + 1) % _walkPoints.Length;
@@ -77,16 +86,49 @@ public class ObstacleBase : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    internal void OnHornAffect(Vector3 carPosition)
+    {
+        if (!_isHornAffected || IsHit) return;
+        if (_walkPoints == null || _walkPoints.Length == 0) return;
+
+        _agent.speed = _defaultSpeed * _hornSpeedMultiplier;
+
+        Vector3 awayFromCar = (transform.position - carPosition).normalized;
+
+        float bestDot = -Mathf.Infinity;
+        int bestIndex = 0;
+
+        for (int i = 0; i < _walkPoints.Length; i++)
+        {
+            Vector3 dirToPoint =
+                (_walkPoints[i].position - transform.position).normalized;
+
+            float dot = Vector3.Dot(awayFromCar, dirToPoint);
+
+            if (dot > bestDot)
+            {
+                bestDot = dot;
+                bestIndex = i;
+            }
+        }
+
+        _currentPointIndex = bestIndex;
+        _agent.destination = _walkPoints[_currentPointIndex].position;
+
+        // Continue patrol after flee point
+        _currentPointIndex = (_currentPointIndex + 1) % _walkPoints.Length;
+    }
 }
 
 
-public enum ObsticleType
-{
-    BuissnesGuy,
-    FarmerLik,
-    Nun,
-    Obsticle,
-    RadniciStaklo,
-    Ronaldo,
-    VoceLik
-}
+//public enum ObsticleType
+//{
+//    BuissnesGuy,
+//    FarmerLik,
+//    Nun,
+//    Obsticle,
+//    RadniciStaklo,
+//    Ronaldo,
+//    VoceLik
+//}

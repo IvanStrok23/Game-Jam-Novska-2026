@@ -133,6 +133,10 @@ PrefabInstance:
       value: Farmer@Walking
       objectReference: {fileID: 0}
     - target: {fileID: 1273158548352979780, guid: 3b3c73e0cfba6b9489ee8999b132a9f2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273158548352979780, guid: 3b3c73e0cfba6b9489ee8999b132a9f2, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
