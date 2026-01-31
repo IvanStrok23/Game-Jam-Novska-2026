@@ -12,13 +12,14 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _DOUBLESIDED_ON
   - _ENABLE_FOG_ON_TRANSPARENT
   - _NORMALMAP_TANGENT_SPACE
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
@@ -154,8 +155,8 @@ Material:
     - _BlendMode: 0
     - _CoatMask: 0
     - _ConservativeDepthOffsetEnable: 0
-    - _CullMode: 2
-    - _CullModeForward: 2
+    - _CullMode: 0
+    - _CullModeForward: 0
     - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
@@ -166,7 +167,7 @@ Material:
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
-    - _DoubleSidedEnable: 0
+    - _DoubleSidedEnable: 1
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
     - _DrainDirection: -1
@@ -201,7 +202,7 @@ Material:
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
     - _MaterialTypeMask: 2
-    - _Metallic: 0
+    - _Metallic: 0.569
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _NoiseScale: 13.1
@@ -223,7 +224,7 @@ Material:
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
     - _SmearStrength: 53.4
-    - _Smoothness: 1
+    - _Smoothness: 0.908
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
@@ -266,8 +267,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0.90588236}
-    - _Color: {r: 0, g: 0, b: 0, a: 0.90588236}
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 0.8509804}
+    - _Color: {r: 0, g: 0, b: 0, a: 0.8509804}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
