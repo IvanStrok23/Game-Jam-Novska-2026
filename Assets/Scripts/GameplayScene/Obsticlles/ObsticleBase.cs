@@ -4,21 +4,25 @@ using UnityEngine.AI;
 
 public class ObstacleBase : MonoBehaviour
 {
-    public NavMeshAgent agent;
-    public Animator animator;
-    public Transform[] walkPoints;
-    public DirtType DirtType;
-    public float Damage = 0;
-    public float LifetimeAfterHit = 3;
+    [SerializeField] private NavMeshAgent _agent;
+    [SerializeField] private Transform[] _walkPoints;
+    [SerializeField] private DirtType _dirtType;
+    [SerializeField] private float _damage = 5;
+    [SerializeField] private float _lifetimeAfterHit = 3;
+    [SerializeField] private AudioClip _hitSound;
 
-    private int currentPointIndex = 0;
+    private int _currentPointIndex = 0;
     public bool IsHit = false;
     private Action _onHit;
 
+    public float Damage => _damage;
+    public DirtType DirtType => _dirtType;
+    public float LifetimeAfterHit => _lifetimeAfterHit;
+
     void Start()
     {
-        if (agent == null)
-            agent = GetComponent<NavMeshAgent>();
+        if (_agent == null)
+            _agent = GetComponent<NavMeshAgent>();
 
         GoToNextPoint();
     }
@@ -27,7 +31,7 @@ public class ObstacleBase : MonoBehaviour
     {
         if (IsHit) return;
 
-        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+        if (!_agent.pathPending && _agent.remainingDistance <= _agent.stoppingDistance)
         {
             GoToNextPoint();
         }
@@ -39,10 +43,10 @@ public class ObstacleBase : MonoBehaviour
     }
     void GoToNextPoint()
     {
-        if (walkPoints.Length == 0) return;
+        if (_walkPoints.Length == 0) return;
 
-        agent.destination = walkPoints[currentPointIndex].position;
-        currentPointIndex = (currentPointIndex + 1) % walkPoints.Length;
+        _agent.destination = _walkPoints[_currentPointIndex].position;
+        _currentPointIndex = (_currentPointIndex + 1) % _walkPoints.Length;
     }
 
     public void Hit(Vector3 force)
@@ -50,7 +54,12 @@ public class ObstacleBase : MonoBehaviour
         if (IsHit) return;
         IsHit = true;
 
-        agent.enabled = false;
+        _agent.enabled = false;
+
+        if (_hitSound != null)
+        {
+            SoundManager.MonoInstance.PlayOnce(_hitSound);
+        }
 
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
@@ -58,18 +67,26 @@ public class ObstacleBase : MonoBehaviour
             rb.isKinematic = false;
             rb.AddForce(force, ForceMode.Impulse);
         }
-        if (animator)
-        {
-            animator.enabled = false;
-        }
+
+
         _onHit?.Invoke();
-        Invoke(nameof(DestroyObject), LifetimeAfterHit);
+        Invoke(nameof(DestroyObject), _lifetimeAfterHit);
     }
 
     public void DestroyObject()
     {
         Destroy(gameObject);
     }
-
 }
 
+
+public enum ObsticleType
+{
+    BuissnesGuy,
+    FarmerLik,
+    Nun,
+    Obsticle,
+    RadniciStaklo,
+    Ronaldo,
+    VoceLik
+}

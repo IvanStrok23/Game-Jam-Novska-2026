@@ -2,31 +2,23 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class VoceGuy : MonoBehaviour
+public class BasicObsticle : MonoBehaviour
 {
     [SerializeField] private ObstacleBase obstacle;
-    [SerializeField] private List<Apple> apples;
     [SerializeField] private List<Animator> _animators;
 
-    private float forceStrength = 5f;
 
     private void Awake()
     {
         obstacle.RegisterOnHit(OnHit);
     }
 
+
     private void OnHit()
     {
         if (_animators.Any())
         {
             _animators.ForEach(a => a.enabled = false);
-        }
-
-        foreach (Apple apple in apples)
-        {
-            Vector3 randomDirection = Random.onUnitSphere;
-            randomDirection.y = Mathf.Abs(randomDirection.y);
-            apple.Hit(randomDirection, forceStrength);
         }
     }
 }

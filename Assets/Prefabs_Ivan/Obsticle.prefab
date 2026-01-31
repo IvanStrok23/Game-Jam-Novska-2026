@@ -408,9 +408,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObsticleBase
   agent: {fileID: 1198722247354759338}
+  animators: []
   walkPoints: []
-  DirtType: 1
+  DirtType: 0
   Damage: 20
+  LifetimeAfterHit: 3
   IsHit: 0
 --- !u!54 &974995586205531427
 Rigidbody:
