@@ -31,11 +31,13 @@ public class CarMovement : MonoBehaviour
 
     private Action<float> _onSpeedChange;
     private Action<float> _onDamageReceived;
-    internal void Init(PlayerInput playerInput, Action<float> onSpeedChange, Action<float> onDamageReceived)
+    private Action _onGameFinish;
+    internal void Init(PlayerInput playerInput, Action<float> onSpeedChange, Action<float> onDamageReceived, Action onGameFinish)
     {
         _playerInput = playerInput;
         _onSpeedChange = onSpeedChange;
         _onDamageReceived = onDamageReceived;
+        _onGameFinish = onGameFinish;
 
         _playerInput.RegisterOnHornsKeyDown((keyCode) => partsController.PlayHorns());
         _playerInput.RegisterOnWipersKeyDown((keyCode) => partsController.PlayWipers());
@@ -200,6 +202,11 @@ public class CarMovement : MonoBehaviour
                 //  if (obsticle)
 
             }
+        }
+        if (collision.gameObject.CompareTag("FinishGame"))
+        {
+            _onGameFinish?.Invoke();
+            ResetCar();
         }
     }
 

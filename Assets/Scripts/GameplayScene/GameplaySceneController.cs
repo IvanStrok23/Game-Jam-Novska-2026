@@ -12,7 +12,7 @@ public class GameplaySceneController : MonoBehaviour
 
     private void Awake()
     {
-        _carMovement.Init(_playerInput, OnCarSpeedChange, OnCarDamageReceived);
+        _carMovement.Init(_playerInput, OnCarSpeedChange, OnCarDamageReceived, OnGameFinish);
         _uiManager.Init(_playerInput, () => StartGame());
     }
 
@@ -41,6 +41,10 @@ public class GameplaySceneController : MonoBehaviour
         }
     }
 
+    private void OnGameFinish()
+    {
+        _uiManager.OnGameFinish();
+    }
 
     private void StartGame()
     {
@@ -70,6 +74,12 @@ public class GameplaySceneController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             OnCarSpeedChange(0.1f);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            OnGameFinish();
 
         }
     }
