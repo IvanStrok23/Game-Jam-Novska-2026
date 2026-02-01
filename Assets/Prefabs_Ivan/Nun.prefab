@@ -45,8 +45,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 737500026095464381}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
+  m_Radius: 0.3
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 220
@@ -71,9 +71,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObsticleBase
   _agent: {fileID: 7430076063280122505}
-  _walkPoints:
-  - {fileID: 0}
+  _walkPoints: []
   _dirtType: 2
+  _type: 0
   _damage: 5
   _lifetimeAfterHit: 3
   _hitSound: {fileID: 0}
@@ -236,10 +236,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.004
-  m_Height: 0.017
+  m_Radius: 0.0005093529
+  m_Height: 0.016999999
   m_Direction: 1
-  m_Center: {x: 0, y: 0.0075, z: 0}
+  m_Center: {x: -0.0005738026, y: 0.0075000003, z: 0.0003347379}
 --- !u!4 &2136803120751842343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5120835875102943070, guid: 74a2f06bdeda0dc4898597b99bf46eb4, type: 3}

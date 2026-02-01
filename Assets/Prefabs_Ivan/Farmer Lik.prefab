@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.416, y: -0.00001, z: -68.987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8469851333036447507}
@@ -45,8 +45,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 5231975813843406898}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
+  m_Radius: 0.3
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 220
@@ -71,9 +71,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObsticleBase
   _agent: {fileID: 6568351103177961489}
-  _walkPoints:
-  - {fileID: 0}
+  _walkPoints: []
   _dirtType: 2
+  _type: 0
   _damage: 5
   _lifetimeAfterHit: 3
   _hitSound: {fileID: 0}
@@ -222,7 +222,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.08405413
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: -0.0077983313, y: 1, z: 0.028596606}
